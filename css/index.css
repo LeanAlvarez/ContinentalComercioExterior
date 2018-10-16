@@ -1,0 +1,124 @@
+.contenedor{
+    padding: 0px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing:  border-box;
+    transition: .3s;
+    z-index: 1;
+}
+nav.black {
+    background: rgba(0, 0, 0, .8);
+    height: 100px;
+    padding: 10px 100px;
+}
+
+
+nav .logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    transition: .3s;
+}
+nav.black .logo {
+    color:#fff;
+    
+}
+
+nav ul {
+    list-style: none;   
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+nav ul li a {
+    line-height: 80px;
+    color: #151515;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+nav.black ul li a {
+    color: #fff;
+}
+
+nav ul li a:focus{
+    outline: none;
+}
+
+nav ul li a.active {
+    background: #e2472f;
+    color #fff;
+    border-radius: 6px;
+}
+
+
+
+
+
+.titulo{
+    position: absolute;
+    text-align: center;
+
+}
+
+
+.titulo, h1, p {
+    color: #fff;
+    padding: 10px 20px;
+}
+.titulo b{
+    font-size: 40px;
+}
+.titulo p{
+    font-size: 25px;
+}
+
+
+
+@media only screen and (max-width: 760px) {
+   .contenedor, img{
+       width: 100vw;
+       height: 100vh;
+   }
+   .titulo{
+       width: 100vw;
+       padding: 0px 0px;
+   }
+   h1, .parrafoSm{
+       display: none;
+   }
+   .wrapper{
+       display: none;
+   }
+
+}
+
+@media only screen and (min-width: 760px) {
+    h2{
+        display: none;
+    }
+    .parrafoSm{
+        display: none;
+    }
+
+}

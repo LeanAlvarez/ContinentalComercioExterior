@@ -31,7 +31,7 @@ ul li a:hover{
 }
 
 nav.black{
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, .4);
     transition: 2s;
 }
 
@@ -46,8 +46,11 @@ nav.black{
     font-size: 25px;
 }
 
-.navbar{
-    background: rgba(0, 0, 0, .3);
+/* .navbar{
+    background: rgba(0, 0, 0, .6);
+} */
+.card p{
+    color: black;
 }
 
 

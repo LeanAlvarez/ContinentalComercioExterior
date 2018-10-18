@@ -14,20 +14,27 @@
     text-align: center;
 
 }
+p{
+    font-family: 'Roboto Slab', serif;
+}
+.container{
+    font-family: 'Righteous', cursive;
+}
+
 ul li a{
     color: #fff;
     font-weight: bold;
 }
 
 ul li a:hover{
-    color: green;
+    color: rgb(0, 87, 128);
 }
 .navbar-brand{
     color: #fff;
     font-weight: bold;
 }
 .navbar-brand:hover{
-    color: green;
+    color: #0072EB;
 }
 
 nav.black{
@@ -53,7 +60,18 @@ nav.black{
     color: black;
 }
 
-
+.redes a i{
+    color: black;
+}
+.redes a i:hover{
+    color: #0072EB;
+}
+.container-footer p{
+    color: black;
+}
+.container-footer, i{
+    color: red;
+}
 
 @media only screen and (max-width: 760px) {
    .contenedor, img{

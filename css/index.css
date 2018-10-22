@@ -73,6 +73,14 @@ nav.black{
     color: red;
 }
 
+.nosotros p{
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+.nosotros h3{
+    font-family: 'Righteous', cursive;
+}
+
 @media only screen and (max-width: 760px) {
    .contenedor, img{
        width: 100vw;
@@ -90,6 +98,54 @@ nav.black{
    }
 
 }
+
+.footer1{
+    background: #b5b1b2;
+}
+
+.footer2{
+    background: #dcdcdd;
+}
+
+
+.content{
+    background-image: url(/img/world1.jpeg);
+    width: 100%;
+    height: 500px; 
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.content h3,h4{
+    position: relative;
+}
+
+.content h3{
+    font-size: 60px;
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+
+.content h4{
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+
 
 @media only screen and (min-width: 760px) {
     h2{

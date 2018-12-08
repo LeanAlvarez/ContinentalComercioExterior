@@ -1,0 +1,33 @@
+{
+  "name": "continental-comex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "dev": "nodemon src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeanAlvarez/ContinentalComercioExterior.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeanAlvarez/ContinentalComercioExterior/issues"
+  },
+  "homepage": "https://github.com/LeanAlvarez/ContinentalComercioExterior#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14",
+    "morgan": "^1.9.1",
+    "nodemailer": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}

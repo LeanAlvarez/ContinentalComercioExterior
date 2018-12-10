@@ -9,7 +9,7 @@
 
         <!--Form with header-->
 
-        <form action="/contacto/formulario" method="post">
+        <form action="/contacto/formulario" method="post" onsubmit="return evitarSpam();">
             <div class="card border-primary rounded-0">
                 <div class="card-header p-0">
                     <div class="bg-info text-white text-center py-2">
@@ -47,7 +47,9 @@
                             <textarea class="form-control" placeholder="Envianos tu Mensaje" type="text" class="form-control" id="mensaje" name="mensaje" required></textarea>
                         </div>
                     </div>
-
+                    <div style="display: none;"> 
+                        <label for="nospam"><input type="text" name="nospam" id="nospam"></label>
+                    </div>
                     <div class="text-center">
                         <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
                     </div>

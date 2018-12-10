@@ -54,12 +54,12 @@ router.post('/contacto/formulario', (req, res, next) => {
         html: '<p>Se ha enviado un mensaje desde el formulario de contacto</p><ul><li>Nombre: '+req.body.nombre+'</li><li>Email: '+ req.body.email+'</li><li>Mensaje:'+req.body.mensaje+'</li></ul>'
     }
     transporter.sendMail(mailOptions,(err, info) => {
-        if(err){
-            res.redirect('/fail')
-            console.log(err)
-        }else{
+        if(!err){
             res.redirect('/exito')
             console.log('Mensaje Enviado '+info)
+        }else{
+            res.redirect('/fail')
+            console.log(err)
         }
     })
 })
